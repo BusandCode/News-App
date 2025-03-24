@@ -3,7 +3,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
 const Home = () => {
-  var myImage = require("./images/busand.jpg")
+  var myImage = require("./images/News_bg.jpg")
   return (
     <View style={styles.container}>
         <ImageBackground
@@ -12,6 +12,11 @@ const Home = () => {
         resizeMode="cover"
         />
       <Text>Home</Text>
+      <View style={styles.overlay}>
+        <View style={styles.header}>
+          <Text>BusandCode News App</Text>
+        </View>
+      </View>
     </View>
   )
 }
