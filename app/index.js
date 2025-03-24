@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 import React from 'react';
 
@@ -8,15 +8,29 @@ const Home = () => {
     <View style={styles.container}>
         <ImageBackground
         source={myImage}
+        // source={{uri:"https://images.pexels.com/photos/9967888/pexels-photo-9967888.jpeg?auto=compress&cs=tinysrgb&w=1200"}}
         style={styles.ImageBackground}
         resizeMode="cover"
-        />
-      <Text>Home</Text>
+        >
       <View style={styles.overlay}>
         <View style={styles.header}>
           <Text style={styles.title} >BusandCode News App</Text>
         </View>
+        <View style={styles.content}>
+          <Text style={styles.subtitle}>
+            Welcome to Busand News App.
+            Your daily dose of News, curated just for you.
+          </Text>
+          <TouchableOpacity
+          style={styles.button}
+          onPress={()=> console.log("Browse by Categories")}>
+            <Text>
+              Browse by Categories
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
+      </ImageBackground>
     </View>
   )
 }
