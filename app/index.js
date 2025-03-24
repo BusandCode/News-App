@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <View style={styles.container}>
         <ImageBackground
-        source={myImage}
-        // source={{uri:"https://images.pexels.com/photos/9967888/pexels-photo-9967888.jpeg?auto=compress&cs=tinysrgb&w=1200"}}
-        style={styles.ImageBackground}
+        // source={myImage}
+        source={{uri:"https://images.pexels.com/photos/9967888/pexels-photo-9967888.jpeg?auto=compress&cs=tinysrgb&w=1200"}}
+        style={styles.backgroundImage}
         resizeMode="cover"
         >
       <View style={styles.overlay}>
