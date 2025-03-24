@@ -1,14 +1,15 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
+  var myImage = require("./images/busand.jpg")
   return (
     <View style={styles.container}>
         <ImageBackground
-        // source={{uri:''}}
+        source={myImage}
         style={styles.ImageBackground}
-        resizeMode='cover'
+        resizeMode="cover"
         />
       <Text>Home</Text>
     </View>
@@ -26,6 +27,13 @@ const styles = StyleSheet.create({
         justifyContent:"center",
     },
     overlay:{
-
+      flex:1,
+      backgroundColor:"rgba(0,0,0,0.5)",
+      justifyContent:"center",
+      alignItems:"center",
+      padding:24
     },
+    header:{
+      marginBottom:20
+    }
 })
